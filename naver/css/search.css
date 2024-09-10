@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#search-bar{
+    border: none;
+    width: 210px;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+
+    width:320px;
+    min-width: 234px;
+    padding: 12px 12px 12px 20px;
+    border-radius: 50px;
+    border : 1px solid var(--green-100, #03CC5C)
+}
+
+#menuBtn{
+    background-image: url("/img/button.svg");
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: white;
+
+}
+
+#logoBtn{
+    background-image: url("/img/NAVER.svg");
+    width: 24px;
+    height: 24px;
+    background-color: white;
+}
+
+
+#search:hover{
+    box-shadow:  1px 3px 3px #BCC3C7;
+}
+
+
+#logoBtn:hover{
+    cursor:pointer;
+}
+#menuBtn:hover{
+    cursor:pointer;
+}
+
+/* #search-bar:not(:placeholder-shown){
+    box-shadow:  1px 3px 3px #BCC3C7;
+} */
+
+#link-modal{
+    display: none;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    margin: 50px auto;
+    border-radius: 50%;
+    border : 1px solid var(--green-100, #03CC5C)
+}
+
+#link-modal a{
+    margin-bottom: 20px;
+    display:block;
+    text-decoration-line:none;
+}
