@@ -8,9 +8,12 @@
 #search-bar{
     border: none;
     width: 210px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
-#search{
+.search{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +22,7 @@
 
     width:320px;
     min-width: 234px;
-    padding: 12px 12px 12px 20px;
+    padding: 10px 12px 12px 20px;
     border-radius: 50px;
     border : 1px solid var(--green-100, #03CC5C)
 }
@@ -33,7 +36,7 @@
 
 }
 
-#logoBtn{
+.logoBtn{
     background-image: url("/img/NAVER.svg");
     width: 24px;
     height: 24px;
@@ -41,7 +44,7 @@
 }
 
 
-#search:hover{
+.search:hover{
     box-shadow:  1px 3px 3px #BCC3C7;
 }
 
@@ -53,12 +56,7 @@
     cursor:pointer;
 }
 
-/* #search-bar:not(:placeholder-shown){
-    box-shadow:  1px 3px 3px #BCC3C7;
-} */
-
 #link-modal{
-    display: none;
     width: 300px;
     height: 300px;
     text-align: center;
@@ -74,3 +72,7 @@
     display:block;
     text-decoration-line:none;
 }
+
+/* #search-bar:not(:placeholder-shown){
+    box-shadow:  1px 3px 3px #BCC3C7;
+} */

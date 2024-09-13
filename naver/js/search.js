@@ -5,23 +5,19 @@ const search = document.querySelector("#search")
 const menuBtn = document.querySelector("#menuBtn")
 const LinkModal = document.querySelector("#link-modal")
 
-searchForm.addEventListener("submit", function(){
-    var query = searchBar,value;
-    var url = `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${query}`;
+// searchForm.addEventListener("submit", function(){
+//     var query = searchBar,value;
+//     var url = `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${query}`;
 
-    window.location.href = url;
-})
-
-searchBar.addEventListener("change", function(){
-
-})
+//     window.location.href = url;
+// })
 
 menuBtn.addEventListener("click", function() {
-    LinkModal.style.display  = 'block'
+
     LinkModal.showModal();
 })
 
 document.addEventListener('mouseup', function(e){
-    LinkModal.style.display  = 'none'
+  
     LinkModal.close();
 })

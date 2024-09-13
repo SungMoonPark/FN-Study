@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>메인 검색창</title>
     <link rel="stylesheet" href="./css/search.css">
 </head>
 <body>
-    <div id = "search">
+    <div class = "search">
         <a href="https://www.naver.com/">
-            <div id ="logoBtn" aria-label="홈으로 가기"></div>
+            <div class ="logoBtn" aria-label="홈으로 가기"></div>
         </a>
         <form action="#" id = "search-form">
-            <input id = "search-bar" type="search" aria-label="검색창" title ="검색어를 입력해주세요" placeholder="검색어를 입력해주세요." id = "search-box">
+            <input id = "search-bar" type="search" aria-label="검색창" title ="검색어를 입력해주세요" placeholder="검색어를 입력해주세요.">
         </form>
-        <button type = "button" id = "menuBtn"></button>
+        <button type = "button" id = "menuBtn" aria-label = "메뉴버튼"></button>
     </div>
 
     <dialog id ="link-modal">
@@ -24,6 +24,6 @@
             길찾기</a>
     </dialog>
 
-    <script src = "/js/search.js"></script>
+    <script src = "./js/search.js"></script>
 </body>
 </html>
