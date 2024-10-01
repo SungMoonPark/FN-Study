@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+
+section{
+    margin: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c4c4c4;
+}
+
+.vertical-card{
+    justify-content: center;
+    align-content: center;
+}
+
+.horizontal-card{
+    justify-content: center;
+    align-content: center;
+}
+
+.vertical-card div{
+    text-align: center;
+}
+
+.horizontal-card div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo-img{
+    margin: 5% auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.vertical-product-img{
+    margin: auto;
+    display: block;
+}
+
+.horizontal-product-img{
+    display: flex;
+}
+
+.buy-btn{
+    margin-left: 5%;
+    text-decoration-line: none;
+    inline-size: 42px;
+    block-size: 42px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}   
+
+.buy-btn:hover{
+    display: block;
+    background-color: #0074E9;
+    inline-size: 112px;
+    block-size: 42px;
+}
+
+.buy-btn::before{
+ content: "구매하기 ";
+ opacity: 0;
+ font-size: 0;
+ text-align: center;
+}
+   
+
+.buy-btn:hover::before{
+    opacity: 1;
+    font-size: 15px;
+}
