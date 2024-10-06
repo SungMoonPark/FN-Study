@@ -15,6 +15,11 @@ section{
     border-color: #c4c4c4;
 }
 
+div {
+    text-align: center;
+    font-weight: 700;
+}
+
 .vertical-card{
     justify-content: center;
     align-content: center;
@@ -23,15 +28,6 @@ section{
 .horizontal-card{
     justify-content: center;
     align-content: center;
-}
-
-.vertical-card div{
-    text-align: center;
-}
-
-.horizontal-card div{
-    text-align: center;
-    vertical-align: middle;
 }
 
 .logo-img{
@@ -50,19 +46,23 @@ section{
 }
 
 .buy-btn{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
     margin-left: 5%;
+    margin-bottom: 5%;
     text-decoration-line: none;
     inline-size: 42px;
     block-size: 42px;
     background-color: gray;
     color: white;
     cursor: pointer;
-    text-align: center;
-    align-items: center;
+
+
 }   
 
 .buy-btn:hover{
-    display: block;
     background-color: #0074E9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     inline-size: 112px;
@@ -75,7 +75,6 @@ section{
  font-size: 0;
  text-align: center;
 }
-   
 
 .buy-btn:hover::before{
     opacity: 1;
